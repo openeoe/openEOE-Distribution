@@ -35,7 +35,7 @@ setup_ttys()
 setup_sudoers()
 {
     echo '%sudo   ALL = (ALL) ALL' > /etc/sudoers.d/sudo
-    echo 'rancher ALL = (ALL) NOPASSWD: ALL' >> /etc/sudoers.d/sudo
+    echo 'openEOE ALL = (ALL) NOPASSWD: ALL' >> /etc/sudoers.d/sudo
 }
 
 setup_services()
@@ -129,7 +129,7 @@ setup_hostname()
     fi
 
     mkdir -p /var/lib/rancher/k3os
-    HOSTNAME=k3os-${RANDOM}
+    HOSTNAME=openEOE-${RANDOM}
     echo $HOSTNAME > /var/lib/rancher/k3os/hostname
     cp /var/lib/rancher/k3os/hostname /etc/hostname
 
