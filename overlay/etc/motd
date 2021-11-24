@@ -1,6 +1,6 @@
 Welcome to openEOE!
 
-Refer to https://github.com/openEOE/openEOE-Installer for README and issues.
+Refer to https://github.com/openEOE/openEOE-Distribution for README and issues.
 
 The default mode of openEOE is to run a single node cluster. Use "kubectl"
 to access it. The node token in /var/lib/rancher/k3s/server/node-token

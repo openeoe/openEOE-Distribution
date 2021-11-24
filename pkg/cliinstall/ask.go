@@ -201,7 +201,7 @@ func AskPassword(cfg *config.CloudConfig) error {
 	}()
 
 	cmd := exec.Command("chpasswd")
-	cmd.Stdin = strings.NewReader(fmt.Sprintf("rancher:%s", pass))
+	cmd.Stdin = strings.NewReader(fmt.Sprintf("openEOE:%s", pass))
 	errBuffer := &bytes.Buffer{}
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = errBuffer

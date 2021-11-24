@@ -17,12 +17,12 @@ var (
 )
 
 func PromptPassword() (string, bool, error) {
-	fmt.Print("Please enter password for [rancher]: ")
+	fmt.Print("Please enter password for [openEOE]: ")
 	p, err := MaskPassword(os.Stdin, os.Stdout)
 	if err != nil {
 		return "", false, errors.Wrapf(err, "failed to set password")
 	}
-	fmt.Print("Confirm password for [rancher]: ")
+	fmt.Print("Confirm password for [openEOE]: ")
 	c, err := MaskPassword(os.Stdin, os.Stdout)
 	if err != nil {
 		return "", false, errors.Wrapf(err, "failed to confirm password")

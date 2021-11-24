@@ -12,7 +12,7 @@ import (
 )
 
 func Run() error {
-	fmt.Println("\nRunning k3OS configuration")
+	fmt.Println("\nRunning openEOE configuration")
 
 	cfg, err := config.ReadConfig()
 	if err != nil {
