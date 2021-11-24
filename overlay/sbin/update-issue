@@ -2,13 +2,11 @@
 
 . /etc/os-release
 cat > /etc/issue << "COW"
-               ,        ,
-  ,------------|'------'|  _     ____
- / .           '-'    |-' | |   |___ \\
- \\/|             |    |   | | __  __) |  ___   ___
-   |   .________.'----'   | |/ / |__ <  / _ \\ / __|
-   |   |        |   |     |   <  ___) || (_) |\\__ \\
-   \\___/        \\___/     |_|\\_\\|____/  \\___/ |___/
+ ___                    ___   ___ ___
+| . | ___    ___ ._ _  | __>| . || __>
+| | || . ＼/ ._> | ' | | _> | | ||  _>
+``___``||  _/ ＼___.|_|_| |___>|``___``||___>
+     |_|  
 
 COW
 
@@ -23,6 +21,5 @@ $(ip -br addr show | grep -E -v '^(lo|flannel|cni|veth)')
 EOF
 cat >> /etc/issue << "EOF"
 
-. /etc/issue
-#Welcome to k3OS (login with user: rancher)
+Welcome to openEOE (login with user: openEOE)
 EOF
